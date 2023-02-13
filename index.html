@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Stuff Done</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/eb688e7105.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <h1>GSD</h1>
+        </div>
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
+      <div class="main">
+        <div class="side-bar">
+          <div class="side-bar-sections">
+            <h2 class="due-today">Today</h2>
+            <hr />
+            <h2 class="due-this-week">This Week</h2>
+            <hr />
+            <h2>My Projects</h2>
+            <ul class="projects-list">
+              <li class="add-project">New Project <i class="fa-solid fa-circle-plus"></i>
+            </ul>
+            <hr />
+          </div>
+        </div>
+        <div class="task-display">
+          <div class="current-task">
+            <div>
+                <h1 class="current-project">Today</h1>
+                <h2 class="add-task hidden">Add Task <i class="fa-solid fa-circle-plus"></i></h2>
+            </div>
+            <hr />
+          </div>
+          <div class="task-list">
+            <!-- <div class="task">
+                <div class="task-details">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                </div>
+                <p>Priority: </p>
+                <p>Due Date: </p>
+                <button type="button"><i class="fa-sharp fa-solid fa-circle-check"></i></button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Preslav Piroev @ 2023</p>
+      </div>
+    </div>
+    <div class="module-project hidden">
+        <i class="fa-sharp fa-solid fa-circle-xmark x-mark" id="close-project-module" ></i>
+        <form class="project-form" action="">
+            <label for="projectName">Project Name:</label>
+            <input type="text" name="projectName" id="projectName" class="input">
+            <button type="button" class="create-project">Create</button>
+        </form>
+    </div>
+    <div class="module-task hidden">
+        <i class="fa-sharp fa-solid fa-circle-xmark x-mark" id="close-task-module" ></i>
+        <form class="task-form" action="">
+            <label for="taskName">Task:</label>
+            <input type="text" name="taskName" id="taskName" class="input">
+            <label for="taskDescription">Description:</label>
+            <textarea name="taskDescription" id="taskDescription" class="input" cols="14" rows="5"></textarea>
+            <label for="taskPriority">Priority</label>
+            <select name="taskPriority" id="taskPriority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <label for="taskDueDate">Due Date:</label>
+            <input type="date" name="taskDueDate" id="taskDueDate">
+            <button type="button" class="create-task">Create</button>
+        </form>
+    </div>
+    <div class="background-dim hidden"></div>
+  </body>
+  <script src="main.js"></script>
+</html>
