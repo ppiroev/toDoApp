@@ -1,0 +1,298 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Itim', cursive;
+    color: #313131;
+}
+
+@font-face {
+    font-family: Cybernetic;
+    src: url(CYBERNETIC.otf);
+}
+
+.header {
+    width: 100vw;
+    height: 15vh;
+    display: grid;
+    grid-template-rows: auto auto;
+    position: fixed;
+    top: 0 ;
+    border-bottom: 0.2px solid #9e9e9e;
+}
+
+.top {
+    width: 100%;
+    height: 100%;
+    background-color: #8DCBE6;
+}
+
+.bottom {
+    width: 100%;
+    height: 100%;
+    background-color: #FFEA20;
+}
+
+.logo {
+    position: fixed;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    border: 2px #8DCBE6 solid;
+    background-color: black;
+    color: #E3F6FF;
+    left: 50px;
+    top: 16px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-family: Cybernetic;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: minmax(300px, 400px) 1fr;
+    height: 80vh;
+    margin-top: 15vh;
+}
+
+.side-bar {
+    background-color: #8DCBE6;
+    height: 100%;
+    border-right: 0.2px solid #9e9e9e;;
+}
+
+hr {
+    border: 1px solid #313131;
+}
+
+.side-bar-sections {
+    padding: 25px 50px;
+}
+
+.side-bar-sections ul {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.task-display {
+    background-color: #E3F6FF;
+    height: 100%;
+}
+
+.project-name {
+padding-bottom: 10px;
+}
+
+.current-task {
+    padding: 0 50px;
+    font-size: 1.2rem;
+}
+
+.current-task div {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-task div h1 {
+    margin-bottom: 0;
+}
+
+.current-task div h2 {
+    margin-bottom: 0;
+}
+
+.task {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, auto);
+    gap: 100px;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.task button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+.footer {
+    height: 5vh;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: #9DF1DF;
+    border-top: 0.2px solid #9e9e9e;;
+    text-align: center;
+}
+
+.module-project {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    border: 2px solid #313131;
+    border-radius: 15px;
+    background-color: aliceblue;
+    z-index: 3;
+}
+
+.project-form {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 25px;
+    justify-items: center;
+    font-size: 2rem;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.project-form button {
+    width: 150px;
+    font-family: 'Itim', cursive;
+    font-size: 2rem;
+    border-radius: 25px;
+    border: none;
+    background-color: #FFEA20;
+}
+
+.project-form input {
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid #313131;
+    appearance: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.background-dim {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 50%;
+    position: fixed;
+    top: 0;
+}
+
+.x-mark {
+    padding-left: 90%;
+    padding-top: 10px;
+    font-size: 1.3rem;
+}
+
+.module-task {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    border: 2px solid #313131;
+    border-radius: 15px;
+    background-color: aliceblue;
+    z-index: 3;
+}
+
+.task-form {
+    display: grid;
+    justify-items: center;
+    gap: 5px;
+    font-size: 1.5rem;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+input, textarea {
+    padding: 0 5px;
+    font-family:'Itim', cursive;
+    font-size: 1.5rem;
+    resize: vertical;
+}
+
+.task-form input {
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid #313131;
+    appearance: none;
+}
+
+.task-form textarea {
+    border-radius: 10px;
+    border: 2px solid #313131;
+    appearance: none; 
+}
+
+.task-form button {
+    width: 150px;
+    font-family: 'Itim', cursive;
+    font-size: 2rem;
+    border-radius: 25px;
+    border: none;
+    background-color: #FFEA20;
+    margin-top: 15px;
+}
+
+.task-form select {
+    font-family: 'Itim', cursive;
+    width: 100px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid #313131;
+    background-color: white;
+    padding: 0 5px;
+}
+
+.add-project:hover {
+   color: #FFEA20;
+   text-shadow: 1px 1px black;
+}
+
+.add-task:hover {
+    color: #FFEA20;
+    text-shadow: 1px 1px black;
+ }
+
+ .due-today:hover{
+    color: #FFEA20;
+    text-shadow: 1px 1px black;
+ }
+
+ .due-this-week:hover {
+    color: #FFEA20;
+    text-shadow: 1px 1px black;
+ }
+
+ .project-name:hover {
+    color: #FFEA20;
+    text-shadow: 1px 1px black;
+ }
+
+ .delete-project {
+    padding-left: 10px;
+    font-size: 1.2rem;
+ }
+
+ .delete-project:hover {
+    color: #FFEA20;
+ }
+
+ .project-item {
+    display: grid;
+    grid-template-columns: minmax(10px, 150px) 17px;
+    align-items: center;
+    padding-bottom: 10px;
+    justify-items: start;
+ }
+
+ .project-item p {
+    margin: 0;
+    padding: 0;
+ }
+
