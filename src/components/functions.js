@@ -155,11 +155,12 @@ function displayTasks(selectedProject) {
   } else if (selectedProject === "This Week") {
     displayTasksDueThisWeek();
   } else {
+    getDom.addTaskBtn.classList.remove("hidden");
     const currDisplayedTasks = document.querySelectorAll(".task");
     currDisplayedTasks.forEach((currTask) => {
       currTask.remove();
     });
-
+    
     let currentProjectsList = storage.get("projects");
     currentProjectsList.forEach((project) => {
       if (project.name === selectedProject) {
